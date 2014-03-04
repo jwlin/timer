@@ -1,0 +1,77 @@
+body
+{
+	 background: black; 
+	 font-family:Helvetica;
+}
+
+div
+{
+	position:absolute;
+	left:50%;
+	top:50%;
+	text-align:center;
+	color: silver;
+}
+
+p
+{
+	color: gold;
+	font-size: 40%;
+}
+
+p input
+{
+	font-size: 70%;
+}
+
+p.instruction
+{
+	color: grey;
+	font-size: 30%;
+}
+
+@media screen and (min-width: 800px)
+{
+	div
+	{
+		width: 800px;
+		margin-left:-400px;
+		font-size: 65px;
+	}
+	input
+	{
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	div
+	{
+		width: 400px;
+		margin-left:-200px;
+		font-size: 35px;
+	}
+	input
+	{
+		font-size: 25px;
+	}
+}
+
+@media screen and (min-height: 600px)
+{
+	div
+	{
+		height: 600px;
+		margin-top:-300px;
+	}
+}
+
+@media screen and (max-height: 600px)
+{
+	div
+	{
+		height: 300px;
+		margin-top:-150px;
+	}
+}
