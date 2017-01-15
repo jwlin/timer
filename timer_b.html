@@ -1,0 +1,28 @@
+<!DOCTYPE html><html>
+<head>
+    <meta charset="UTF-8">
+	<title>Timer</title>
+	<link href="timer.css" rel="stylesheet">
+</head>
+  <body onload="triggerTimer()" onbeforeunload="saveTime()" onkeyup="onKeyPress(event)">
+    <div>
+      <h1 id="demo"></h1>
+	  <input type="button" onclick="pauseTimer()" value="Pause" id="btnPause">
+	  <input type="button" onclick="triggerTimer()" value="Resume" id="btnResume">
+	  <input type="button" onclick="resetTimer()()" value="Reset" id="btnReset">
+      <p id="prev"></p>
+	  <p class="instruction">Space: Pause/Resume; L: Load; R: Reset</p>
+	  <p>
+	    Beep Interval:
+	    <input type="radio" name="beep" value="10" onchange="setBeep()">10
+		<input type="radio" name="beep" value="20" onchange="setBeep()">20
+		<input type="radio" name="beep" value="30" onchange="setBeep()" checked="checked">30
+	  </p>
+	  <audio id="sound">
+		<source src="bing.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	  </audio>
+    </div>
+	<script src="timer_b.js"></script>
+  </body>
+</html>
